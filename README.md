@@ -3,6 +3,14 @@ Lost Paws offers services for our pets.
 
 # HOW-TO: 
 
+## Install PHP with XAMPP
+
+https://www.youtube.com/watch?v=FG_tpCCFwOQ&ab_channel=GeekyScript 
+
+## How to Run PHP on Visual Studio Code
+
+https://www.youtube.com/watch?v=zT6QrGIfXaU&ab_channel=ProgrammingGuru
+
 ## Check Status
 ``` 
 git status
