@@ -27,25 +27,31 @@ session_start();
 	<!-- Main Body -->
 	
 	<!-- Test Case -->
-	<li><a href="Logout.php">Logout</a></li>
+	
 	
 	<div>
 		<ul>
 		<?php
 		if(isset($_SESSION['Admin'])){
 			echo '<h2>Admin</h2>';
-			echo '<li>Add Navigation to Admin pages here</li>';
-			echo '<li>Add Navigation to Admin pages here</li>';
-			echo '<li>Add Navigation to Admin pages here</li>';
+			echo '<li><a href="Lost.php">Lost Pets</a></li>';
+			echo '<li><a href="Found.php">Found Pets</a></li>';
+			echo '<li><a href="Adoption.php">Adoption</a></li>';
+			echo '<li><a href="Logout.php">Logout</a></li>';
 		}
 		else if(isset($_SESSION['User'])){
 			echo '<h2>User</h2>';
-			echo '<li>Add Navigation to User pages here</li>';
-			echo '<li>Add Navigation to User pages here</li>';
-			echo '<li>Add Navigation to User pages here</li>';
+			echo '<li><a href="Lost.php">Lost Pets</a></li>';
+			echo '<li><a href="Found.php">Found Pets</a></li>';
+			echo '<li><a href="Adoption.php">Adoption</a></li>';
+			echo '<li><a href="Logout.php">Logout</a></li>';
 		} else {
 			echo '<h2>No Login</h2>';
-			echo '<li>Add Navigation to Login pages here</li>';
+			echo '<li><a href="Login.php">Login</a></li>';
+			echo '<li><a href="Signup.php">Sign up</a></li>';
+			echo '<li><a href="Lost.php">Lost Pets</a></li>';
+			echo '<li><a href="Found.php">Found Pets</a></li>';
+			echo '<li><a href="Adoption.php">Adoption</a></li>';
 		}
 		?>	
 		</ul>

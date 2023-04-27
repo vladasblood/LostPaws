@@ -57,7 +57,6 @@ if (isset($_POST['submit'])){
 	
 	<!-- Test Case -->
 	<h2>Login Test:</h2>
-	<li><a href="Logout.php">Logout</a></li>
 	<form action="Login.php" method="post">
 		</br>
 		<label for="user"><b>Username</b></label>

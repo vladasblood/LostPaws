@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2023 at 11:20 AM
+-- Generation Time: Apr 27, 2023 at 04:45 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -62,7 +62,7 @@ CREATE TABLE `found_pets` (
 --
 
 INSERT INTO `found_pets` (`Find_Pets_id`, `Type`, `Breed`, `Name`, `Gender`, `Color`, `Location_Found`, `DateTime_Found`, `Microchip`, `Additional_Information`, `Upload_Photo`, `Roles_Found_Pets`) VALUES
-(0, 'TestFoundA', 'TestBreedA', 'TestNameA', 'M', 'White', 'TestLocationA', '2023-01-12 06:29:00', 'TestChipA', 'TestInfoA', 'UrlA', 'TestRoleA');
+(2, 'AdminTestA', 'AdminBreedA', 'AdminNameA', 'M', 'Green', 'AdminLocationA', '2022-08-14 12:53:00', 'AdminChipA', 'AdminInfoA', 'AdminURLA', 'Admin');
 
 -- --------------------------------------------------------
 
@@ -91,7 +91,7 @@ CREATE TABLE `lost_pets` (
 
 INSERT INTO `lost_pets` (`lost_pets_id`, `Type`, `Breed`, `Name`, `Gender`, `Color`, `Last_Location`, `DateTime_LastSeen`, `Additional_Information`, `Upload_Photo`, `Roles_Lost_Pets`, `Microchip`) VALUES
 (101, 'testType', 'testBreed', 'testName', 'M', 'White', 'TestLocation', '2023-04-01 09:00:00', 'TestInfo', 'URL here', 'TestRole', 'TestChip'),
-(106, 'testTypeB', 'testBreedB', 'testNameB', 'F', 'Red', 'TestLocationB', '2023-04-02 11:15:00', 'Lorem ipsum dolor sit amet', 'UrlB', 'testRoleB', 'TestChipB');
+(110, 'AdminTestA', 'AdminBreedA', 'AdminNameA', 'M', 'Orange', 'AdminLocationA', '2022-05-18 01:46:00', 'Admin Info A', 'AdminURLA', 'Admin', 'AdminChipA');
 
 -- --------------------------------------------------------
 
@@ -214,10 +214,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `found_pets`
+--
+ALTER TABLE `found_pets`
+  MODIFY `Find_Pets_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `lost_pets`
 --
 ALTER TABLE `lost_pets`
-  MODIFY `lost_pets_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+  MODIFY `lost_pets_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
 
 --
 -- AUTO_INCREMENT for table `users`
