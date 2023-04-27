@@ -5,6 +5,14 @@ session_start(); //starts the session
 
 if(isset($_POST['submit'])) //Added an if to keep the page secured
 {
+	if (isset($_SESSION['Admin'])){
+		$rolesFound = $_SESSION['Admin'];
+	}else if (isset($_SESSION['User'])){
+		$rolesFound = $_SESSION['User'];
+	}else{
+		
+	}
+	
 	$typeFound = ($_POST['Type']);
 	$breedFound = ($_POST['Breed']);
 	$nameFound = ($_POST['Name']);
@@ -15,7 +23,6 @@ if(isset($_POST['submit'])) //Added an if to keep the page secured
 	$dateFound = date('Y-m-d H:i:s', strtotime($dateInput));
 	$infoFound = ($_POST['Additional_Information']);
 	$imageFound = ($_POST['Upload_Photo']);
-	$rolesFound = ($_POST['Roles_Found_Pets']);
 	$chipFound = ($_POST['Microchip']);
 
 	// SQL Query

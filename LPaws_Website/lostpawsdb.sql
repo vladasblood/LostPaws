@@ -3,22 +3,18 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2023 at 05:43 PM
+-- Generation Time: Apr 27, 2023 at 04:45 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-
 START TRANSACTION;
+SET time_zone = "+00:00";
 
-SET TIME_ZONE = "+00:00";
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-
 /*!40101 SET NAMES utf8mb4 */;
 
 --
@@ -31,14 +27,14 @@ SET TIME_ZONE = "+00:00";
 -- Table structure for table `adopt_pets`
 --
 
-CREATE TABLE `ADOPT_PETS` (
-  `ADOPT_PETS_ID` INT(11) NOT NULL,
-  `TYPE` VARCHAR(25) NOT NULL,
-  `BREED` VARCHAR(25) NOT NULL,
-  `GENDER` CHAR(1) NOT NULL,
-  `COLOR` VARCHAR(25) NOT NULL,
-  `ROLES_ADOPT_PETS` VARCHAR(25) NOT NULL
-) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4 COLLATE=UTF8MB4_GENERAL_CI;
+CREATE TABLE `adopt_pets` (
+  `Adopt_Pets_id` int(11) NOT NULL,
+  `Type` varchar(25) NOT NULL,
+  `Breed` varchar(25) NOT NULL,
+  `Gender` char(1) NOT NULL,
+  `Color` varchar(25) NOT NULL,
+  `Roles_Adopt_Pets` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -46,52 +42,27 @@ CREATE TABLE `ADOPT_PETS` (
 -- Table structure for table `found_pets`
 --
 
-CREATE TABLE `FOUND_PETS` (
-  `FIND_PETS_ID` INT(11) NOT NULL,
-  `TYPE` VARCHAR(25) NOT NULL,
-  `BREED` VARCHAR(25) NOT NULL,
-  `NAME` VARCHAR(25) NOT NULL,
-  `GENDER` CHAR(1) NOT NULL,
-  `COLOR` VARCHAR(25) NOT NULL,
-  `LOCATION_FOUND` VARCHAR(40) NOT NULL,
-  `DATETIME_FOUND` DATETIME NOT NULL,
-  `MICROCHIP` VARCHAR(25) NOT NULL,
-  `ADDITIONAL_INFORMATION` VARCHAR(1000) NOT NULL,
-  `UPLOAD_PHOTO` VARCHAR(1000) NOT NULL,
-  `ROLES_FOUND_PETS` VARCHAR(25) NOT NULL
-) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4 COLLATE=UTF8MB4_GENERAL_CI;
+CREATE TABLE `found_pets` (
+  `Find_Pets_id` int(11) NOT NULL,
+  `Type` varchar(25) NOT NULL,
+  `Breed` varchar(25) NOT NULL,
+  `Name` varchar(25) NOT NULL,
+  `Gender` char(1) NOT NULL,
+  `Color` varchar(25) NOT NULL,
+  `Location_Found` varchar(40) NOT NULL,
+  `DateTime_Found` datetime NOT NULL,
+  `Microchip` varchar(25) NOT NULL,
+  `Additional_Information` varchar(1000) NOT NULL,
+  `Upload_Photo` varchar(1000) NOT NULL,
+  `Roles_Found_Pets` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `found_pets`
 --
 
-INSERT INTO `FOUND_PETS` (
-  `FIND_PETS_ID`,
-  `TYPE`,
-  `BREED`,
-  `NAME`,
-  `GENDER`,
-  `COLOR`,
-  `LOCATION_FOUND`,
-  `DATETIME_FOUND`,
-  `MICROCHIP`,
-  `ADDITIONAL_INFORMATION`,
-  `UPLOAD_PHOTO`,
-  `ROLES_FOUND_PETS`
-) VALUES (
-  0,
-  'TestFoundA',
-  'TestBreedA',
-  'TestNameA',
-  'M',
-  'White',
-  'TestLocationA',
-  '2023-01-12 06:29:00',
-  'TestChipA',
-  'TestInfoA',
-  'UrlA',
-  'TestRoleA'
-);
+INSERT INTO `found_pets` (`Find_Pets_id`, `Type`, `Breed`, `Name`, `Gender`, `Color`, `Location_Found`, `DateTime_Found`, `Microchip`, `Additional_Information`, `Upload_Photo`, `Roles_Found_Pets`) VALUES
+(2, 'AdminTestA', 'AdminBreedA', 'AdminNameA', 'M', 'Green', 'AdminLocationA', '2022-08-14 12:53:00', 'AdminChipA', 'AdminInfoA', 'AdminURLA', 'Admin');
 
 -- --------------------------------------------------------
 
@@ -99,66 +70,28 @@ INSERT INTO `FOUND_PETS` (
 -- Table structure for table `lost_pets`
 --
 
-CREATE TABLE `LOST_PETS` (
-  `LOST_PETS_ID` INT(11) NOT NULL,
-  `TYPE` VARCHAR(25) NOT NULL,
-  `BREED` VARCHAR(25) NOT NULL,
-  `NAME` VARCHAR(25) NOT NULL,
-  `GENDER` CHAR(1) NOT NULL,
-  `COLOR` VARCHAR(25) NOT NULL,
-  `LAST_LOCATION` VARCHAR(40) NOT NULL,
-  `DATETIME_LASTSEEN` DATETIME NOT NULL,
-  `ADDITIONAL_INFORMATION` VARCHAR(1000) NOT NULL,
-  `UPLOAD_PHOTO` VARCHAR(1000) NOT NULL,
-  `ROLES_LOST_PETS` VARCHAR(25) NOT NULL,
-  `MICROCHIP` VARCHAR(25) NOT NULL
-) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4 COLLATE=UTF8MB4_GENERAL_CI;
+CREATE TABLE `lost_pets` (
+  `lost_pets_id` int(11) NOT NULL,
+  `Type` varchar(25) NOT NULL,
+  `Breed` varchar(25) NOT NULL,
+  `Name` varchar(25) NOT NULL,
+  `Gender` char(1) NOT NULL,
+  `Color` varchar(25) NOT NULL,
+  `Last_Location` varchar(40) NOT NULL,
+  `DateTime_LastSeen` datetime NOT NULL,
+  `Additional_Information` varchar(1000) NOT NULL,
+  `Upload_Photo` varchar(1000) NOT NULL,
+  `Roles_Lost_Pets` varchar(25) NOT NULL,
+  `Microchip` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `lost_pets`
 --
 
-INSERT INTO `LOST_PETS` (
-  `LOST_PETS_ID`,
-  `TYPE`,
-  `BREED`,
-  `NAME`,
-  `GENDER`,
-  `COLOR`,
-  `LAST_LOCATION`,
-  `DATETIME_LASTSEEN`,
-  `ADDITIONAL_INFORMATION`,
-  `UPLOAD_PHOTO`,
-  `ROLES_LOST_PETS`,
-  `MICROCHIP`
-) VALUES (
-  101,
-  'testType',
-  'testBreed',
-  'testName',
-  'M',
-  'White',
-  'TestLocation',
-  '2023-04-01 09:00:00',
-  'TestInfo',
-  'URL here',
-  'TestRole',
-  'TestChip'
-),
-(
-  106,
-  'testTypeB',
-  'testBreedB',
-  'testNameB',
-  'F',
-  'Red',
-  'TestLocationB',
-  '2023-04-02 11:15:00',
-  'Lorem ipsum dolor sit amet',
-  'UrlB',
-  'testRoleB',
-  'TestChipB'
-);
+INSERT INTO `lost_pets` (`lost_pets_id`, `Type`, `Breed`, `Name`, `Gender`, `Color`, `Last_Location`, `DateTime_LastSeen`, `Additional_Information`, `Upload_Photo`, `Roles_Lost_Pets`, `Microchip`) VALUES
+(101, 'testType', 'testBreed', 'testName', 'M', 'White', 'TestLocation', '2023-04-01 09:00:00', 'TestInfo', 'URL here', 'TestRole', 'TestChip'),
+(110, 'AdminTestA', 'AdminBreedA', 'AdminNameA', 'M', 'Orange', 'AdminLocationA', '2022-05-18 01:46:00', 'Admin Info A', 'AdminURLA', 'Admin', 'AdminChipA');
 
 -- --------------------------------------------------------
 
@@ -166,9 +99,9 @@ INSERT INTO `LOST_PETS` (
 -- Table structure for table `pets`
 --
 
-CREATE TABLE `PETS` (
-  `PETS_ID` INT(11) NOT NULL
-) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4 COLLATE=UTF8MB4_GENERAL_CI;
+CREATE TABLE `pets` (
+  `Pets_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -176,10 +109,10 @@ CREATE TABLE `PETS` (
 -- Table structure for table `roles`
 --
 
-CREATE TABLE `ROLES` (
-  `USERS_ROLE` INT(11) NOT NULL,
-  `ROLES_NAME` VARCHAR(25) NOT NULL
-) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4 COLLATE=UTF8MB4_GENERAL_CI;
+CREATE TABLE `roles` (
+  `Users_role` int(11) NOT NULL,
+  `Roles_name` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -187,13 +120,13 @@ CREATE TABLE `ROLES` (
 -- Table structure for table `search_query`
 --
 
-CREATE TABLE `SEARCH_QUERY` (
-  `FOUND_PETS_ID` INT(11) NOT NULL,
-  `ADOPT_PETS_ID` INT(11) NOT NULL,
-  `LOST_PETS_ID` INT(11) NOT NULL,
-  `SEARCH_QUERY_ID` INT(11) NOT NULL,
-  `SEARCH_RESULT_ID` INT(11) NOT NULL
-) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4 COLLATE=UTF8MB4_GENERAL_CI;
+CREATE TABLE `search_query` (
+  `Found_Pets_id` int(11) NOT NULL,
+  `Adopt_Pets_id` int(11) NOT NULL,
+  `Lost_Pets_id` int(11) NOT NULL,
+  `Search_Query_id` int(11) NOT NULL,
+  `Search_Result_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -201,10 +134,10 @@ CREATE TABLE `SEARCH_QUERY` (
 -- Table structure for table `search_result`
 --
 
-CREATE TABLE `SEARCH_RESULT` (
-  `SEARCH_RESULT_ID` INT(11) NOT NULL,
-  `PETS_ID` INT(11) NOT NULL
-) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4 COLLATE=UTF8MB4_GENERAL_CI;
+CREATE TABLE `search_result` (
+  `Search_Result_id` int(11) NOT NULL,
+  `Pets_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -212,15 +145,23 @@ CREATE TABLE `SEARCH_RESULT` (
 -- Table structure for table `users`
 --
 
-CREATE TABLE `USERS` (
-  `USERS_ID` INT(11) NOT NULL,
-  `USERNAME` VARCHAR(50) NOT NULL,
-  `PASSWORD` VARCHAR(50) NOT NULL,
-  `FIRST_NAME` VARCHAR(40) NOT NULL,
-  `LAST_NAME` VARCHAR(40) NOT NULL,
-  `USERS_ROLE` INT(11) NOT NULL,
-  `SEARCH_ID_QUERY` INT(11) NOT NULL
-) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4 COLLATE=UTF8MB4_GENERAL_CI;
+CREATE TABLE `users` (
+  `users_id` int(11) NOT NULL,
+  `Username` varchar(50) NOT NULL,
+  `Password` varchar(50) NOT NULL,
+  `First_Name` varchar(50) NOT NULL,
+  `Last_Name` varchar(50) NOT NULL,
+  `Users_role` int(11) NOT NULL,
+  `Search_id_query` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`users_id`, `Username`, `Password`, `First_Name`, `Last_Name`, `Users_role`, `Search_id_query`) VALUES
+(1, 'Admin', 'AdminAcc', 'Admin', 'Admin', 0, 0),
+(2, 'TestA', 'AAA', 'TestAA', 'TestAAA', 1, 0);
 
 --
 -- Indexes for dumped tables
@@ -229,51 +170,68 @@ CREATE TABLE `USERS` (
 --
 -- Indexes for table `adopt_pets`
 --
-ALTER TABLE `ADOPT_PETS` ADD PRIMARY KEY (`ADOPT_PETS_ID`);
+ALTER TABLE `adopt_pets`
+  ADD PRIMARY KEY (`Adopt_Pets_id`);
 
 --
 -- Indexes for table `found_pets`
 --
-ALTER TABLE `FOUND_PETS` ADD PRIMARY KEY (`FIND_PETS_ID`);
+ALTER TABLE `found_pets`
+  ADD PRIMARY KEY (`Find_Pets_id`);
 
 --
 -- Indexes for table `lost_pets`
 --
-ALTER TABLE `LOST_PETS` ADD PRIMARY KEY (`LOST_PETS_ID`);
+ALTER TABLE `lost_pets`
+  ADD PRIMARY KEY (`lost_pets_id`);
 
 --
 -- Indexes for table `roles`
 --
-ALTER TABLE `ROLES` ADD PRIMARY KEY (`USERS_ROLE`);
+ALTER TABLE `roles`
+  ADD PRIMARY KEY (`Users_role`);
 
 --
 -- Indexes for table `search_query`
 --
-ALTER TABLE `SEARCH_QUERY` ADD PRIMARY KEY (`FOUND_PETS_ID`, `ADOPT_PETS_ID`, `LOST_PETS_ID`);
+ALTER TABLE `search_query`
+  ADD PRIMARY KEY (`Found_Pets_id`,`Adopt_Pets_id`,`Lost_Pets_id`);
 
 --
 -- Indexes for table `search_result`
 --
-ALTER TABLE `SEARCH_RESULT` ADD PRIMARY KEY (`SEARCH_RESULT_ID`);
+ALTER TABLE `search_result`
+  ADD PRIMARY KEY (`Search_Result_id`);
 
 --
 -- Indexes for table `users`
 --
-ALTER TABLE `USERS` ADD PRIMARY KEY (`USERS_ID`);
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`users_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
+-- AUTO_INCREMENT for table `found_pets`
+--
+ALTER TABLE `found_pets`
+  MODIFY `Find_Pets_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `lost_pets`
 --
-ALTER TABLE `LOST_PETS` MODIFY `LOST_PETS_ID` INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+ALTER TABLE `lost_pets`
+  MODIFY `lost_pets_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
 
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
