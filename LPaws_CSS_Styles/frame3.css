@@ -216,7 +216,7 @@ body {
     position: absolute;
   }
   .frame3-group37 {
-    top: 866px;
+    top: 914px;
     left: 575px;
     width: 769px;
     height: 92px;
@@ -225,6 +225,8 @@ body {
     align-items: flex-start;
     flex-shrink: 1;
     background-color: rgba(223, 215, 215, 1);
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25) ;
+    border-radius: 0px 0px 30px 30px;
   }
   .frame3-text008 {
     top: 7px;
@@ -234,7 +236,7 @@ body {
     height: auto;
     position: absolute;
     font-size: 60px;
-    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25) ;
+    /* box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25) ; */
     font-style: Regular;
     text-align: left;
     font-family: Montserrat;

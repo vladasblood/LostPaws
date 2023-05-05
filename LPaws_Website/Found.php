@@ -139,6 +139,14 @@ session_start();
         </div>
     </div>
     </br>
+    
+    <div class="filter-buttons-group">
+        <input id="filter-by-name"/ >
+        <div>
+            <button id="filter-button">Filter</button>
+        </div>
+    </div>  
+
 	<!-- Main Body -->
     <div id='table-style'>
 	

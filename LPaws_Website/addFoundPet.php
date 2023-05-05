@@ -31,3 +31,4 @@ if(isset($_POST['submit'])) //Added an if to keep the page secured
 }
 
 ?>
+

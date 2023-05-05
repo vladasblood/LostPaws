@@ -1,7 +1,7 @@
 .frame2-container {
     width: 100%;
-    display: flex;
-    overflow: auto;
+    display: inline-block;
+    overflow: none;
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
@@ -29,9 +29,9 @@
     position: absolute;
   }
   .frame2-rectangle8 {
-    top: 29px;
+    top: 60px;
     left: 0px;
-    width: 1910px;
+    width: 100%;
     height: 890px;
     position: absolute;
   }
@@ -274,17 +274,18 @@
     border-radius: 5px;
   }
   .frame2-text008 {
-    top: 48px;
-    left: 897px;
-    color: rgba(255, 255, 255, 1);
-    width: 117px;
+    top: 7px;
+    left: 251px;
+    color: rgba(83, 86, 84, 1);
+    width: 344px;
     height: auto;
     position: absolute;
-    font-size: 15px;
-    font-style: Medium;
+    font-size: 60px;
+    /* box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25) ; */
+    font-style: Regular;
     text-align: left;
     font-family: Montserrat;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     font-stretch: normal;
     text-decoration: none;
@@ -1481,6 +1482,19 @@
     position: absolute;
     align-items: flex-start;
     flex-shrink: 1;
+  }
+  .frame2-group37 {
+    top: 950px;
+    left: 575px;
+    width: 769px;
+    height: 92px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(223, 215, 215, 1);
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25) ;
+    border-radius: 0px 0px 30px 30px;
   }
   .frame2-text175 {
     top: 69px;

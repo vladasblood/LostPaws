@@ -121,8 +121,36 @@ session_start();
 			</nav>
 		</section>
 	</section>
+    
+    <div class="frame2-container">
+        <div class="frame1-frame1">
 
+            <img
+            src="../LPaws_Images/image 4.png"
+            alt="image 4"
+            class="frame2-rectangle8"
+            />
+          
+            <!-- <img
+                src="../LPaws_Images/rectangle71952-nprh-500h.png"
+                alt="Rectangle71952"
+                class="frame3-rectangle7"
+                /> -->
+            <div class="frame2-group37">
+                <span class="frame2-text008"><span>Lost Pets</span></span>
+            </div>
+        </div>
+    </div>
 
+    <br>
+    
+    <div class="filter-buttons-group">
+        <input id="filter-by-name"/ >
+        <div>
+            <button id="filter-button">Filter</button>
+        </div>
+    </div>  
+    
 	<!-- Main Body -->
     <div id='table-style'>
 	
