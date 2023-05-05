@@ -297,11 +297,6 @@ session_start();
 
 	</br>
 
-
-
-
-
-
 	<?php
 	if (isset($_SESSION['Admin'])) { ?>
 

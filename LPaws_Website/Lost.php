@@ -357,10 +357,10 @@ session_start();
 						<h5>Color</h5>
 						<input type="text" placeholder="Color" name="Color" required></br>
 
-						<h5>Location Found</h5>
+						<h5>Last Seen Location</h5>
 						<input type="text" placeholder="Last Seen Location" name="Last_Location" required></br>
 
-						<h5>Date/Time Found</h5>
+						<h5>Date/Time Last Seen</h5>
 						<input type="datetime-local" placeholder="Time Last Seen" name="Last_Date" required></br>
 
 
