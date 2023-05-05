@@ -128,7 +128,7 @@ session_start();
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" data-tag="font" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
-	<link rel="stylesheet" href="/LPaws_CSS_Styles/style.css" />
+	<link rel="stylesheet" href="../LPaws_CSS_Styles/style.css" />
 </head>
 
 <!-- Webpage Body Start -->
@@ -141,19 +141,22 @@ session_start();
 				<ul id="ulnavi">
 					<?php
 					if (isset($_SESSION['Admin'])) {
-						echo '<h2>Admin</h2>';
+						// echo '<h2>Admin</h2>';
+                        echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Home.php">Home</a></li></div>';
 						echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Lost.php">Lost Pets</a></li></div>';
 						echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Found.php">Found Pets</a></li></div>';
 						echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Adoption.php">Adoption</a></li></div>';
 						echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Logout.php">Logout</a></li></div>';
 					} else if (isset($_SESSION['User'])) {
-						echo '<h2>User</h2>';
+						// echo '<h2>User</h2>';
+                        echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Home.php">Home</a></li></div>';
 						echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Lost.php">Lost Pets</a></li></div>';
 						echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Found.php">Found Pets</a></li></div>';
 						echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Adoption.php">Adoption</a></li></div>';
 						echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Logout.php">Logout</a></li></div>';
 					} else {
-						echo '<h2>No Login</h2>';
+						// echo '<h2>No Login</h2>';
+                        echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Home.php">Home</a></li></div>';
 						echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Login.php">Login</a></li></div>';
 						echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Signup.php">Sign up</a></li></div>';
 						echo '<div id="nav-item-home-container"><li class="nav-item" id="nav-item-home"><a href="Lost.php">Lost Pets</a></li></div>';
@@ -168,16 +171,16 @@ session_start();
 
 	<!-- Main Body -->
 	<div>
-		<link href="/LPaws_CSS_Styles/frame1.css" rel="stylesheet" />
+		<link href="../LPaws_CSS_Styles/frame1.css" rel="stylesheet" />
 
 		<div class="frame1-container">
 			<div class="frame1-frame1">
-				<img src="/LPaws_Images/background1535-598a.svg" alt="Background1535" class="frame1-background" />
-				<img src="/LPaws_Images/rectangle82016-yzlh-2000w.png" alt="Rectangle82016" class="frame1-rectangle8" />
-				<img src="/LPaws_Images/rectangle71537-7dsn-500h.png" alt="Rectangle71537" class="frame1-rectangle7" />
-				<img src="/LPaws_Images/image11538-ffjg-800h.png" alt="image11538" class="frame1-image1" />
+				<img src="../LPaws_Images/background1535-598a.svg" alt="Background1535" class="frame1-background" />
+				<img src="../LPaws_Images/rectangle82016-yzlh-2000w.png" alt="Rectangle82016" class="frame1-rectangle8" />
+				<img src="../LPaws_Images/rectangle71537-7dsn-500h.png" alt="Rectangle71537" class="frame1-rectangle7" />
+				<img src="../LPaws_Images/image11538-ffjg-800h.png" alt="image11538" class="frame1-image1" />
 				<div class="frame1-group7">
-					<img src="/LPaws_Images/image21531-flad-700h.png" alt="image21531" class="frame1-image2" />
+					<img src="../LPaws_Images/image21531-flad-700h.png" alt="image21531" class="frame1-image2" />
 					<div class="frame1-group4">
 						<span class="frame1-text">
 							<span>
@@ -268,12 +271,12 @@ session_start();
 					</span>
 				</div>
 				<div class="frame1-logo">
-					<img src="/LPaws_Images/logo1532-33r9.svg" alt="Logo1532" class="frame1-logo1" />
-					<img src="/LPaws_Images/text1532-hsui-200h.png" alt="Text1532" class="frame1-text31" />
+					<img src="../LPaws_Images/logo1532-33r9.svg" alt="Logo1532" class="frame1-logo1" />
+					<img src="../LPaws_Images/text1532-hsui-200h.png" alt="Text1532" class="frame1-text31" />
 				</div>
 				<div class="frame1-margin">
-					<img src="/LPaws_Images/line11539-5sfq.svg" alt="Line11539" class="frame1-line1" />
-					<img src="/LPaws_Images/line21531-rhsr.svg" alt="Line21531" class="frame1-line2" />
+					<img src="../LPaws_Images/line11539-5sfq.svg" alt="Line11539" class="frame1-line1" />
+					<img src="../LPaws_Images/line21531-rhsr.svg" alt="Line21531" class="frame1-line2" />
 				</div>
 			</div>
 		</div>
