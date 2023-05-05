@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2023 at 04:45 PM
+-- Generation Time: May 05, 2023 at 12:49 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -35,6 +35,13 @@ CREATE TABLE `adopt_pets` (
   `Color` varchar(25) NOT NULL,
   `Roles_Adopt_Pets` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `adopt_pets`
+--
+
+INSERT INTO `adopt_pets` (`Adopt_Pets_id`, `Type`, `Breed`, `Gender`, `Color`, `Roles_Adopt_Pets`) VALUES
+(0, 'TestAdoptA', 'TestBreedA', 'M', 'Yellow', 'Admin');
 
 -- --------------------------------------------------------
 
