@@ -224,7 +224,7 @@ session_start();
 	
 	<div class="form-container" id="form-container-2">
 		<form action="addFoundPet.php" method="post">
-			<h4>Lost Pet Form</h4>
+			<h4>Found Pet Form</h4>
             <div class="flex-container">
                 <div class="flex-child">
                     <h5>Type</h5>

@@ -33,8 +33,8 @@
     --dl-space-space-fourunits: 64px;
     --dl-space-space-threeunits: 48px;
     --dl-space-space-oneandhalfunits: 24px;
-}
-.button {
+  }
+  .button {
     color: var(--dl-color-gray-black);
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -42,8 +42,8 @@
     border-width: 1px;
     border-radius: 4px;
     background-color: var(--dl-color-gray-white);
-}
-.input {
+  }
+  .input {
     color: var(--dl-color-gray-black);
     cursor: auto;
     padding: 0.5rem 1rem;
@@ -51,8 +51,8 @@
     border-width: 1px;
     border-radius: 4px;
     background-color: var(--dl-color-gray-white);
-}
-.textarea {
+  }
+  .textarea {
     color: var(--dl-color-gray-black);
     cursor: auto;
     padding: 0.5rem;
@@ -60,40 +60,41 @@
     border-width: 1px;
     border-radius: 4px;
     background-color: var(--dl-color-gray-white);
-}
-.list {
+  }
+  .list {
     width: 100%;
     margin: 1em 0px 1em 0px;
     display: block;
     padding: 0px 0px 0px 1.5rem;
     list-style-type: none;
     list-style-position: outside;
-}
-.list-item {
+  }
+  .list-item {
     display: list-item;
-}
-.teleport-show {
+  }
+  .teleport-show {
     display: flex !important;
     transform: none !important;
-}
-.Content {
+  }
+  .Content {
     font-size: 16px;
     font-family: Inter;
     font-weight: 400;
     line-height: 1.15;
     text-transform: none;
     text-decoration: none;
-}
-.Heading {
+  }
+  .Heading {
     font-size: 32px;
     font-family: Inter;
     font-weight: 700;
     line-height: 1.15;
     text-transform: none;
     text-decoration: none;
-}
+  }
 
-ul {
+
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -285,3 +286,6 @@ footer {
     background-color: white;
 }
 
+body {
+    background-color: #f7f5f0;
+}

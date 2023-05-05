@@ -135,7 +135,7 @@ a {
 
 #ulnavi{
     list-style-type: none;
-    font-family: Kiona;
+    /* font-family: Kiona; */
     font-weight: bolder;
     padding: 0px 0px 0px 0px;
     font-size:  1.5em;
