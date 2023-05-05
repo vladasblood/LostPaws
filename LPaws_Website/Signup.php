@@ -48,6 +48,7 @@ if (isset($_POST['submit'])){
 	
 	<!-- Test Case -->
 	<h2>Sign up Test:</h2>
+	<li><a href="Home.php">Home Page</a></li>
 	<form action="Signup.php" method="post">
 		</br>
 		<label for="user"><b>Username</b></label>

@@ -27,7 +27,8 @@ session_start();
 	<!-- Main Body -->
 	
 	<!-- Test Case -->
-<h2>Test:</h2>
+	<h2>Test:</h2>
+	<li><a href="Home.php">Home Page</a></li>
 	<?php
 	// Database file
 	require_once 'Config.php';
@@ -60,7 +61,6 @@ session_start();
 							echo "<td>". $row['Adopt_Pets_id']. "</td>";
 							echo "<td>". $row['Type']. "</td>";
 							echo "<td>". $row['Breed']. "</td>";
-							echo "<td>". $row['Gender']. "</td>";
 							echo "<td>". $row['Gender']. "</td>";
 							echo "<td>". $row['Color']. "</td>";
 							echo "<td>". $row['Roles_Adopt_Pets']. "</td>";

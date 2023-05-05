@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 05, 2023 at 12:49 PM
+-- Generation Time: May 05, 2023 at 01:29 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -41,7 +41,9 @@ CREATE TABLE `adopt_pets` (
 --
 
 INSERT INTO `adopt_pets` (`Adopt_Pets_id`, `Type`, `Breed`, `Gender`, `Color`, `Roles_Adopt_Pets`) VALUES
-(0, 'TestAdoptA', 'TestBreedA', 'M', 'Yellow', 'Admin');
+(0, 'TestAdoptA', 'TestBreedA', 'M', 'Yellow', 'Admin'),
+(102, 'AdminTestA', 'AdminBreedA', 'M', 'Green', 'Admin'),
+(104, 'testTypeF', 'testBreedF', 'M', 'Brown', 'TestA');
 
 -- --------------------------------------------------------
 
@@ -69,7 +71,7 @@ CREATE TABLE `found_pets` (
 --
 
 INSERT INTO `found_pets` (`Find_Pets_id`, `Type`, `Breed`, `Name`, `Gender`, `Color`, `Location_Found`, `DateTime_Found`, `Microchip`, `Additional_Information`, `Upload_Photo`, `Roles_Found_Pets`) VALUES
-(2, 'AdminTestA', 'AdminBreedA', 'AdminNameA', 'M', 'Green', 'AdminLocationA', '2022-08-14 12:53:00', 'AdminChipA', 'AdminInfoA', 'AdminURLA', 'Admin');
+(3, 'testTypeE', 'testBreedE', 'testNameE', 'F', 'Red-Orange', 'TestLocationE', '2023-01-31 13:20:00', 'TestChipE', 'Test Info E', 'UrlE', 'Admin');
 
 -- --------------------------------------------------------
 
@@ -224,7 +226,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `found_pets`
 --
 ALTER TABLE `found_pets`
-  MODIFY `Find_Pets_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Find_Pets_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `lost_pets`
