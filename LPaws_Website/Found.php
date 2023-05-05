@@ -46,6 +46,7 @@ session_start();
 	
 	<!-- Test Case -->
 	<h2>Test:</h2>
+	<li><a href="Home.php">Home Page</a></li>
 	<?php
 	// Database file
 	require_once 'Config.php';
@@ -72,6 +73,7 @@ session_start();
                     echo "<th>Additional Information</th>";
                     echo "<th>Photo</th>";
                     echo "<th>Microchip</th>";
+                    echo "<th>Found By</th>";
                   echo "</tr>";
                 echo "</thead>";
 			//Table Body
@@ -91,8 +93,10 @@ session_start();
 							echo "<td>". $row['Additional_Information']. "</td>";
 							echo "<td>". $row['Upload_Photo']. "</td>";
 							echo "<td>". $row['Microchip']. "</td>";
+							echo "<td>". $row['Roles_Found_Pets']. "</td>";
 						if (isset($_SESSION['Admin'])){
 							echo "<td><button class='delete'><a href='deleteFound.php?deleteid=".$row['Find_Pets_id']."'>Delete</a></button></td>";
+							echo "<td><button class='delete'><a href='moveFound.php?moveid=".$row['Find_Pets_id']."'>Move to Adoption</a></button></td>";
 						}
 						echo "</tr>";
 					}
@@ -127,9 +131,6 @@ session_start();
 			<input type="datetime-local" placeholder="Time Found" name="Date_Found" required></br>
 			<textarea name="Additional_Information" rows="10" cols="30" required>Additional Information</textarea></br>
 			<input type="text" placeholder="Image URL" name="Upload_Photo" required></br>
-			<!-- Roles Lost Pets temporary until I fix login
-				should automatically default to either Username of regular user or Admin-->
-			<input type="text" placeholder="User Role" name="Roles_Found_Pets" required></br>
 			<input type="text" placeholder="Microchip Information" name="Microchip" required></br>
 			<input type="submit" name="submit" value="Add" class="form-btn"></br>
 		</form>

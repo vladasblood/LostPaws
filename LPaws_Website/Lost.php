@@ -47,6 +47,7 @@ session_start();
 	
 	<!-- Test Case -->
 	<h2>Test:</h2>
+	<li><a href="Home.php">Home Page</a></li>
 	<?php
 	// Database file
 	require_once 'Config.php';
@@ -73,6 +74,7 @@ session_start();
                     echo "<th>Additional Information</th>";
                     echo "<th>Photo</th>";
                     echo "<th>Microchip</th>";
+                    echo "<th>Posted By</th>";
                   echo "</tr>";
                 echo "</thead>";
 			//Table Body
@@ -92,6 +94,7 @@ session_start();
 							echo "<td>". $row['Additional_Information']. "</td>";
 							echo "<td>". $row['Upload_Photo']. "</td>";
 							echo "<td>". $row['Microchip']. "</td>";
+							echo "<td>". $row['Roles_Lost_Pets']. "</td>";
 						if (isset($_SESSION['Admin'])){
 							echo "<td><button class='delete'><a href='deleteLost.php?deleteid=".$row['lost_pets_id']."'>Delete</a></button></td>";
 						}
