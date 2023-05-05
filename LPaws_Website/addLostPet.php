@@ -28,7 +28,5 @@ if(isset($_POST['submit'])) //Added an if to keep the page secured
 
 	// SQL Query
     mysqli_query($mysqli, "INSERT INTO lost_pets (Type, Breed, Name, Gender, Color, Last_Location, DateTime_LastSeen, Additional_Information, Upload_Photo, Roles_Lost_Pets, Microchip) VALUES ('$typeLost','$breedLost', '$nameLost','$genderLost', '$colorLost','$locationLost','$dateLost', '$infoLost', '$imageLost','$rolesLost','$chipLost')");
-    header("location: ../CS155-2L/Lost.php");
+    header('location:'.$_SERVER['HTTP_REFERER']);
 }
-
-?>

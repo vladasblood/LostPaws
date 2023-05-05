@@ -309,6 +309,7 @@
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(18, 93, 45, 1);
+  border-radius: 200px;
 }
 .frame1-logo1 {
   top: 31px;
